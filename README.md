@@ -162,15 +162,15 @@ o
 
 o
 
-(\\\_/)
+(\_/)
 
-( •\_•)
+( •_•)
 
 / >🔪
 
 Hunger: 3.00 | Happiness: 2.00 | Energy: 7.00
 
-\[F\]eed \[P\]lay \[S\]leep \[Q\]uit
+[F]eed [P]lay [S]leep [Q]uit
 
 ```
 
