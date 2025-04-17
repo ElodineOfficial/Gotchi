@@ -1,1 +1,44 @@
 I'm hungry|hunger|-1
+Need a nap|energy|-2
+Feeling playful!|happiness|2
+Want a snack|hunger|-1
+Time to exercise|energy|1
+Feeling lonely|happiness|-1
+So sleepy...|energy|-2
+Craving treats|hunger|-2
+Ready to play!|happiness|3
+Need attention|happiness|-2
+Bored...|happiness|-1
+Tummy rumbling|hunger|-3
+Fully rested|energy|3
+Want to explore|happiness|2
+Need to stretch|energy|1
+Feeling ignored|happiness|-2
+Super hungry!|hunger|-3
+Energetic and bouncy|energy|3
+Content and happy|happiness|1
+Meal time please|hunger|-2
+Need some rest|energy|-1
+Wanting cuddles|happiness|2
+Very full|hunger|3
+Tired from playing|energy|-2
+Missing you|happiness|-1
+Thirsty|hunger|-1
+Ready for adventure|energy|2
+Feeling mischievous|happiness|1
+Need sunshine|happiness|2
+Time for a snooze|energy|-1
+Hungry again|hunger|-2
+Excited!|happiness|3
+Drowsy|energy|-2
+Well-fed|hunger|2
+Want to run around|energy|2
+Feeling cheerful|happiness|2
+Need food now!|hunger|-3
+Rested and alert|energy|3
+Curious about everything|happiness|1
+Midnight snack?|hunger|-1
+Low energy...|energy|-3
+Feeling affectionate|happiness|2
+Stomach is full|hunger|3
+Need to burn energy|energy|1
