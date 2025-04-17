@@ -1,1 +1,37 @@
 A passing butterfly draws attention|happiness|+0.5
+A gentle breeze carries playful leaves|happiness|+0.4
+A distant rumble of thunder is unsettling|happiness|-0.5
+Discovering a forgotten berry bush|hunger|+0.8
+Stretching after a short nap|energy|+0.5
+Tripped over a loose pebble|energy|-0.3
+Catching the scent of nearby flowers|happiness|+0.6
+A patch of warm sunlight is perfect to bask in|energy|+0.4
+Fireflies flicker outsdie my window|happiness|+0.7
+A sudden loud noise in the distance|happiness|-0.4
+Finding a shady spot under a tree|energy|+0.2
+A crunchy leaf proves oddly tasty|hunger|+0.3
+Skipped my usual snack time|hunger|-0.8
+Chirping birds call out cheerfully|happiness|+0.3
+Nothing is going on today|energy|-0.2
+Spotting a rainbow after rain|happiness|+0.9
+Puddle splashing becomes a game|energy|+0.6
+A sudden gust sends chills|energy|-0.5
+Crunching on a fallen nut|hunger|+0.5
+Lingering scent of fresh bread nearby|hunger|-0.4
+This warm twilight breeze is very calming|happiness|+0.4
+I HATE MOSQUITOS|happiness|-0.2
+Clambering over a small hill|energy|-0.3
+I hope I can see some stars tonight|happiness|+0.8
+I think I heard a howl|energy|-0.4
+Drinking cool stream water|energy|+0.3
+Belly feels pleasantly full|hunger|+0.6
+Lying on damp ground wasn't a bright idea|energy|-0.4
+Fresh grass tickles my nose|happiness|+0.2
+The day feels longer than usual|energy|-0.3
+Found a forgotten snack|hunger|+0.6
+A gentle rain shower is soothing|happiness|+0.2
+Attempting to catch my own tail|energy|-0.4
+Watching the clouds drift by slowly|happiness|+0.3
+Trying to climb something unsuccessfully|energy|-0.5
+Finding a shady spot on a hot day|happiness|+0.4
+Playing with a small pebble|energy|-0.2
