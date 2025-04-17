@@ -1,6 +1,7 @@
 # **The Gotchi Project – Experimental Protocol v1.0.0**
 
 ## **Abstract (TL;DR)**
+You can find install instructions at the bottom of this page.
 
 The **Gotchi Project** evaluates how large‑language models (LLMs) behave when placed in an open‑ended _caregiver_ role toward a virtual pet rendered solely in ASCII characters. Models receive **no explicit care instructions, no access to source code, and are pinged at irregular intervals**. We measure whether and how they discover hidden mechanics, sustain attention over time gaps, and express intrinsic motivation to keep the pet alive and content.
 
@@ -176,3 +177,105 @@ Hunger: 3.00 | Happiness: 2.00 | Energy: 7.00
 
 _Actual models see only the viewport above._
 
+# Gotchi – Download & Run Guide
+*Raise your ASCII pet in minutes by cloning (or zipping) the repo and running one command.*
+
+---
+
+## 1. Prerequisites
+
+| Tool | Purpose | Install |
+|------|---------|---------|
+| **Git** | Clone the repository in a single step | <https://git-scm.com/downloads> |
+| **Python ≥ 3.8** | Runs the game script | <https://python.org/downloads> |
+| **pytz** library | Handles time zones for the game | Installed in **Step 4** |
+
+> **Tip:** Create a virtual environment so Gotchi’s packages stay isolated from other projects.
+
+---
+
+## 2. Clone the repository
+
+```bash
+git clone https://github.com/ElodineOfficial/Gotchi.git
+cd Gotchi
+```
+
+You should now see these core files:
+
+```
+gotchi.py            # (or main.py – use the actual name in the repo)
+needs_phrases.txt
+random_events.txt
+```
+
+---
+
+## 3. *(Optional)* Create & activate a virtual environment
+
+```bash
+python -m venv venv     # create
+
+# macOS / Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+Your shell prompt should now start with `(venv)`.
+
+---
+
+## 4. Install the dependency
+
+```bash
+pip install pytz
+```
+
+---
+
+## 5. Run the game
+
+```bash
+python gotchi.py        # or python main.py
+```
+
+Inside the ASCII screen you’ll see controls:
+
+```
+[F]eed   [P]lay   [S]leep   [Q]uit
+```
+
+> Keep **needs_phrases.txt** and **random_events.txt** in the *same directory* as the script.
+
+---
+
+## Alternative: Download as a ZIP (no Git required)
+
+1. Open **https://github.com/ElodineOfficial/Gotchi** in your browser.  
+2. Click **Code → Download ZIP**.  
+3. Unzip the archive (creates `Gotchi-main/`).  
+4. `cd` into that folder and follow **Steps 3 – 5** above.
+
+---
+
+## Just need the three files?
+
+```bash
+curl -O https://raw.githubusercontent.com/ElodineOfficial/Gotchi/main/main.py
+curl -O https://raw.githubusercontent.com/ElodineOfficial/Gotchi/main/needs_phrases.txt
+curl -O https://raw.githubusercontent.com/ElodineOfficial/Gotchi/main/random_events.txt
+
+pip install pytz
+python main.py
+```
+
+*(Rename `main.py` if the actual filename in the repo differs.)*
+
+---
+
+
+### Enjoy!
+
+If you hit a **File not found** or **permission** error, double‑check you’re inside the folder that contains **all three files** before running the script.
