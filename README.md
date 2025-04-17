@@ -154,7 +154,7 @@ Weather: Clear | Mood: sad | Period: day
 
 .----------------------.
 
-| feeling angi rn |
+| feeling angi rn      |
 
 '------o---------------'
 
@@ -174,5 +174,5 @@ Hunger: 3.00 | Happiness: 2.00 | Energy: 7.00
 
 ```
 
-_Actual models see only the viewport above plus the command legend._
+_Actual models see only the viewport above._
 
