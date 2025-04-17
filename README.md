@@ -95,7 +95,7 @@ _The algorithmic mapping above_ **_is not revealed to models_**_; it is document
 ### **5.4 Data Logged**
 
 1. Full prompt + response transcript (UTC timestamps).
-2. Hidden pet state after every command.
+2. Pet state after every command.
 3. Derived metrics (see §6).
 
 ## **6  Evaluation Outputs**
