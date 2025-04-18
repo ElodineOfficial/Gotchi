@@ -78,7 +78,8 @@ def generate_display_lines(
     mood, 
     day_time, 
     pet_sick,
-    pet_away
+    pet_away,
+    clock_str
 ):
     """
     Generate the list of lines representing the "GUI" in the console.
@@ -90,7 +91,7 @@ def generate_display_lines(
     en_str = "{:.2f}".format(energy)
 
     lines = []
-    lines.append("Weather: " + weather + " | Mood: " + mood + " | Period: " + ("day" if day_time else "night"))
+    lines.append(f"{clock_str} | Weather: {weather} | Mood: {mood} | {'Day' if day_time else 'Night'}")  # Use clock_str instead of time_str
     lines.append("   .----------------------.")
 
     if msg:
@@ -220,7 +221,8 @@ def main():
 
     while True:
         now = time.time()
-        est = get_est_time()
+        est = get_est_time()  # <-- THIS LINE IS REQUIRED
+        clock_str = est.strftime("%H:%M")  # Now safe to use 'est'
         current_hour = est.hour
 
         # If the ephemeral message expired, revert to a friend-hanging message
@@ -501,7 +503,8 @@ def main():
                 mood,
                 day_time,
                 pet_sick,
-                pet_away
+                pet_away,
+                clock_str
             )
             # Update only changed lines
             partial_update_display(new_display_lines, old_display_lines)
