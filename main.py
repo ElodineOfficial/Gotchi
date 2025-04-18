@@ -1,3 +1,4 @@
+import csv
 import time
 import random
 import sys
@@ -22,47 +23,18 @@ def input_thread():
         user_input_queue.put(line.strip())
 
 # --- Utility functions for reading text files ---
-
 def read_phrases(filename):
-    """
-    Reads lines from 'needs_phrases.txt' of the form:
-       text|stat|delta
-    e.g. 'I'm hungry|hunger|-1'
-    Returns a list of tuples: [(text, stat, delta), ...]
-    """
-    p = []
-    try:
-        with open(filename, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    parts = line.split("|")
-                    if len(parts) == 3:
-                        text = parts[0]
-                        stat = parts[1]
-                        try:
-                            delta = float(parts[2])
-                        except:
-                            delta = 0
-                        p.append((text, stat, delta))
-                    else:
-                        # If there's no pipe or it's malformed, just store raw text, no stat/delta
-                        p.append((line, "", 0))
-    except:
-        pass
-    return p
+    with open(filename, newline='', encoding='utf-8') as f:
+        reader = csv.reader(f, delimiter='|')
+        rows = []
+        for row in reader:
+            if row and len(row) == 3:
+                rows.append((row[0], row[1], float(row[2])))
+        return rows
 
 def read_events(filename):
-    e = []
-    try:
-        with open(filename, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    e.append(line)
-    except:
-        pass
-    return e
+    with open(filename, encoding='utf-8') as f:
+        return [line.strip() for line in f if line.strip()]
 
 def get_est_time():
     return datetime.now(pytz.timezone("US/Eastern"))
