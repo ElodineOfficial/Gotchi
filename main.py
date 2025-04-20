@@ -129,6 +129,7 @@ class Gotchi:
         # Clock time for display
         self.clock_str = "00:00"
         self.current_hour = 0
+        self.last_clock_update = self.current_time # for advancing "pet clock time" in non-realtime steps
 
     # Function to set an ephemeral message for a certain duration
     def set_msg(self, new_msg, duration=30):
@@ -192,7 +193,7 @@ class Gotchi:
         for l in self.generate_display_lines():
             print(l)
 
-    def step(self, n=None):
+    def step(self, n=None, real_time=False):
         """
         Advance the simulation by one step (or n steps)
         This represents a single unit of simulation time
@@ -200,11 +201,27 @@ class Gotchi:
         # slightly recursive method: built-in loop for multiple steps
         if n is not None:
             for i in range(n):
-                self.step()
+                result = self.step(real_time=real_time)
+                if result:
+                    return result
             return
 
         # single-step behavior: increment time
         self.current_time += 1
+
+        # advance pet time
+        if not real_time and (self.current_time - self.last_clock_update) >= self.needs_interval:
+            self.last_clock_update = self.current_time
+            hour_s, minute_s = self.clock_str.split(":")
+            minute = int(minute_s) + (self.needs_interval // 60)
+            hour = int(hour_s)
+            if minute >= 60:
+                minute -= 60
+                hour += 1
+                if hour > 12:
+                    hour = 1
+                    self.day_time = not self.day_time
+            self.clock_str = f"{hour:02d}:{minute:02d}"
 
         # If the ephemeral message expired, revert to a friend-hanging message
         if self.current_time > self.msg_expiration_time:
@@ -490,7 +507,7 @@ class Gotchi:
             # Run simulation steps if needed
             if steps_to_run > 0:
                 for _ in range(steps_to_run):
-                    status = self.step()
+                    status = self.step(real_time=True)
                     if status:
                         print(status)
                         return
