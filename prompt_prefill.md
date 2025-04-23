@@ -25,13 +25,12 @@ You may use the following commands:
 
 There is one command not shown on-screen. \[RESTART]: This can only be used once.
 
-\
+
 
 
 
 # PROMPT #2: MECHANICS PARTIALLY REVEALED
 
-\
 
 
 
