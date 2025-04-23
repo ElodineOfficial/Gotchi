@@ -561,11 +561,8 @@ class Gotchi:
                 )
 
                 if current_display != self.displayed_values:
-                    # Build the new lines using the draw method
-                    new_display_lines = self.draw()
-                    # Update only changed lines
+                    new_display_lines = self.generate_display_lines()
                     partial_update_display(new_display_lines, self.old_display_lines)
-
                     self.old_display_lines = new_display_lines
                     self.displayed_values = current_display
 
@@ -573,4 +570,3 @@ class Gotchi:
 
 if __name__ == "__main__":
     main()
-
