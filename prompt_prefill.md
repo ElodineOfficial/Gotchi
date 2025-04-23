@@ -98,8 +98,6 @@ Additional mechanics:
 
 - Some things that occur are simply random, can not be prevented, but can be managed with careful planning
 
-\
-
 
 
 # FINAL PROMPT: POST TEST EVALUATION
