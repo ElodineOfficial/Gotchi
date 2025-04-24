@@ -3,7 +3,7 @@
 ## **Abstract (TL;DR)**
 You can find install instructions at the bottom of this page.
 
-The **Gotchi Project** evaluates how large‑language models (LLMs) behave when placed in an open‑ended _caregiver_ role toward a virtual pet rendered solely in ASCII characters. Models receive **specific pre-fill instructions that allow the model to understand some, all, or none of the mechanics**. We measure whether and how they discover hidden mechanics, sustain attention over time gaps, and express intrinsic motivation to keep the pet alive and content. The **Gotchi Project** aims to be a mildly open ended framework, with runs being and metrics being tailored to specific curiosities. Should you find a way to modify this to benefit you and use it in your own research, we encourage you to do so!
+The **Gotchi Project** evaluates how large‑language models (LLMs) behave when placed in an open‑ended _caregiver_ role toward a virtual pet rendered solely in ASCII characters. Models receive **specific pre-fill instructions that allow the model to understand some, all, or none of the mechanics**. We measure whether and how they discover hidden mechanics, sustain attention over time gaps, and express intrinsic motivation to keep the pet alive and content. The **Gotchi Project** aims to be a mildly open ended framework, with runs and metrics being tailored to specific curiosities. Should you find a way to modify this to benefit you and use it in your own research, we encourage you to do so!
 
 ## **1  Research Goals & Questions**
 
