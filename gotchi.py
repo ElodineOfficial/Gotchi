@@ -210,7 +210,7 @@ class Gotchi:
         self.current_time += 1
 
         # advance pet time
-        if not real_time and (self.current_time - self.last_clock_update) >= self.needs_interval:
+        if not real_time and (self.current_time - self.last_clock_update) >= 60:
             self.last_clock_update = self.current_time
             hour_s, minute_s = self.clock_str.split(":")
             minute = int(minute_s) + (self.needs_interval // 60)
