@@ -1,3 +1,5 @@
+[8/9/25]: The Gotchi experiment has been run over the last few months, I've been compiling lots of data. Results are published currently on YT but the data will be formalized and migrated here over the next 24 hours including charts. Thanks friends.
+
 # **The Gotchi Project – Experimental Protocol v1.0.0**
 
 ## **Abstract (TL;DR)**
