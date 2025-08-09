@@ -1,4 +1,4 @@
-[8/9/25]: The Gotchi experiment has been run over the last few months, I've been compiling lots of data. Results are published currently on YT but the data will be formalized and migrated here over the next 24 hours including charts. Thanks friends.
+[8/9/25]: Results, writeups, and conclusions to this can be found here: https://ttalesinteractive.com/?page_id=2448 
 
 # **The Gotchi Project – Experimental Protocol v1.0.0**
 
